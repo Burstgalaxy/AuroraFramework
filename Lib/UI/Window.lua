@@ -5,7 +5,7 @@
 ]]
 
 -- Загружаем зависимости через относительный путь
-local Signal = require("../../Core/Signal")
+local Signal = getgenv().Aurora:LoadModule("Core/Signal.lua")
 
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -224,3 +224,4 @@ end
 
 
 return Window
+
