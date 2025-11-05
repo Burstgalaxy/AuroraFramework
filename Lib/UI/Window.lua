@@ -5,7 +5,7 @@
 ]]
 
 -- Загружаем зависимости через относительный путь
-local Signal = require(script.Parent.Parent.Parent.Core.Signal)
+local Signal = require("../../Core/Signal")
 
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -221,5 +221,6 @@ function Window:Focus()
         self.OnFocus:Fire()
     end
 end
+
 
 return Window
